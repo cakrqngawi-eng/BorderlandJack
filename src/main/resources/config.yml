@@ -1,0 +1,50 @@
+# ===== Pengaturan umum =====
+min-players: 3            # minimal pemain untuk /bl start
+roam-seconds: 240         # lama fase berkeliling per putaran
+vote-seconds: 60          # lama fase voting
+jack-wins-when-humans-left: 1   # Jack menang kalau sisa pemain biasa <= angka ini
+
+# ===== Voting skip fase berkeliling =====
+# Klik kotak di SELMU-mu sendiri (atau /skip kalau sel belum diatur).
+skip:
+  required-ratio: 1.0     # 1.0 = semua pemain hidup harus skip; 0.6 = 60% saja
+
+# ===== Kafetaria =====
+food:
+  stock: 80               # total stok makanan satu game (tampil di papan KAFETARIA)
+
+# Boss bar di atas layar (di screenshot tidak ada; HUD ada di action bar)
+bossbar: false
+
+# ===== Tombol skill Jack =====
+# Mabuk  = tombol F (tukar tangan) ATAU tombol angka di bawah.
+# Racun  = tombol angka di bawah. Angka 1-9 = slot hotbar.
+# (Jack tidak akan pernah bisa pindah ke slot ini, jadi tombolnya selalu "menekan")
+keys:
+  drunk-slot: 8
+  poison-slot: 9
+
+# ===== Skill mabuk =====
+drunk:
+  duration-seconds: 90    # berapa lama korban melihat logo yang salah
+  cooldown-seconds: 40
+  range: 6.0              # jarak tatap maksimal
+
+# ===== Skill racun makanan =====
+poison:
+  duration-seconds: 120   # berapa lama korban lapar lebih cepat
+  cooldown-seconds: 20
+  reach: 4.0              # jarak maksimal Jack ke tempat makan
+
+# ===== Lapar saat berjalan =====
+hunger:
+  food-per-block: 0.06    # poin lapar berkurang per blok berjalan (pemain biasa)
+  jack-multiplier: 0.4    # Jack lebih awet laparnya
+  poison-multiplier: 4.0  # pemain teracun lapar sekian kali lebih cepat
+
+# ===== Posisi logo di punggung (kalau terlihat miring/terbalik, ubah ini) =====
+logo:
+  scale: 1.2
+  back-distance: 0.30     # jarak logo dari punggung
+  y-offset: 0.9           # tinggi logo dari kaki
+  yaw-offset: 180.0       # ubah ke 0 kalau tulisan terlihat terbalik/menghadap depan

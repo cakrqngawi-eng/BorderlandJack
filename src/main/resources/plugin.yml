@@ -1,0 +1,18 @@
+name: BorderlandJack
+version: 1.0.0
+main: id.borderland.BorderlandPlugin
+api-version: '1.21'
+description: Game sosial deduksi - cari Jack, si impostor, di dunia Borderland.
+commands:
+  borderland:
+    description: Perintah admin Borderland Jack
+    aliases: [bl]
+    usage: /<command> <start|stop|status|setarena|setvoteroom|setlobby|setvotebox|addcell|clearcells|addfood|clearfood>
+  skip:
+    description: Voting skip (kalau selmu belum diatur)
+    aliases: [voteskip]
+    usage: /<command>
+permissions:
+  borderland.admin:
+    description: Boleh memakai perintah admin Borderland
+    default: op
